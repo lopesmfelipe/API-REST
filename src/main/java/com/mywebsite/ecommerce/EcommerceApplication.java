@@ -1,13 +1,13 @@
-package com.devsuperior.dscommerce;
+package com.mywebsite.ecommerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DscommerceApplication {
+public class EcommerceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DscommerceApplication.class, args);
+		SpringApplication.run(EcommerceApplication.class, args);
 	}
 
 }

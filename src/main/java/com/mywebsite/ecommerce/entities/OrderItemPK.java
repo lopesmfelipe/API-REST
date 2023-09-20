@@ -1,4 +1,4 @@
-package com.devsuperior.dscommerce.entities;
+package com.mywebsite.ecommerce.entities;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
