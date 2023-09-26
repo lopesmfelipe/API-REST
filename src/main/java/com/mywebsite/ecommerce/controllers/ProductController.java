@@ -1,7 +1,6 @@
 package com.mywebsite.ecommerce.controllers;
 
 import com.mywebsite.ecommerce.dto.ProductDTO;
-import com.mywebsite.ecommerce.entities.Product;
 import com.mywebsite.ecommerce.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -22,8 +21,8 @@ public class ProductController {
 
     @GetMapping(value = "/{id}")
     public ResponseEntity<ProductDTO> findById(@PathVariable Long id) {
-        ProductDTO dto = service.findById(id);
-        return ResponseEntity.ok(dto);
+            ProductDTO dto = service.findById(id);
+            return ResponseEntity.ok(dto);
     }
 
     @GetMapping
