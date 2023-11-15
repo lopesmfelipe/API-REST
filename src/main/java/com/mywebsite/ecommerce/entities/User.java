@@ -131,7 +131,7 @@ public class User implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return roles;
     }
-    
+
     @Override
     public String getUsername() {
         return email;
