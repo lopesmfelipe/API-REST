@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.time.LocalDate;
 import java.util.*;
 
 @Entity
@@ -19,7 +18,7 @@ public class User implements UserDetails {
     @Column(unique = true)
     private String email;
     private String phone;
-    private LocalDate birthDate;
+    private String birthDate;
     private String password;
 
     @OneToMany(mappedBy = "client")
@@ -34,7 +33,7 @@ public class User implements UserDetails {
     public User() {
     }
 
-    public User(Long id, String name, String email, String phone, LocalDate birthDate, String password) {
+    public User(Long id, String name, String email, String phone, String birthDate, String password) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -75,11 +74,11 @@ public class User implements UserDetails {
         this.phone = phone;
     }
 
-    public LocalDate getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
+    public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
     }
 
